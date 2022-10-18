@@ -6,11 +6,16 @@ Stampare sulla pagina (anche brutalmente, basta che si vedano) gli elementi dell
 con un ciclo for e con un ciclo while (potete farlo nello stesso file o in due file separati).
 */
 
-// for loop
 const alimenti = ["Spaghetti", "Petto di pollo", "Pomodoro", "Ricotta", "pancetta", "Tonno", "Mele"];
-console.log(alimenti);
 
+// for loop
 for (let i = 0; i < alimenti.length; i++){
-    console.log(alimenti[i]);
     document.getElementById('for').innerHTML += `${alimenti[i]}<br>`;
+}
+
+// while loop
+let c = 0;
+while (alimenti[c]) {
+    document.getElementById('while').innerHTML += `${alimenti[c]}<br>`;
+    c++;
 }
