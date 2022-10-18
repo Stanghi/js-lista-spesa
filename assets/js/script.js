@@ -9,13 +9,21 @@ con un ciclo for e con un ciclo while (potete farlo nello stesso file o in due f
 const alimenti = ["Spaghetti", "Petto di pollo", "Pomodoro", "Ricotta", "pancetta", "Tonno", "Mele"];
 
 // for loop
+const forList = document.querySelector('.for-list');
+
 for (let i = 0; i < alimenti.length; i++){
-    document.getElementById('for').innerHTML += `${alimenti[i]}<br>`;
+    const liFoor = document.createElement('li');
+    liFoor.innerHTML = `${alimenti[i]}`;
+    forList.append(liFoor);
 }
 
 // while loop
+const whileList = document.querySelector('.while-list');
+
 let c = 0;
 while (alimenti[c]) {
-    document.getElementById('while').innerHTML += `${alimenti[c]}<br>`;
+    const liWhile = document.createElement('li');
+    liWhile.innerHTML = `${alimenti[c]}`;
+    whileList.append(liWhile);
     c++;
 }
