@@ -12,9 +12,9 @@ const alimenti = ["Spaghetti", "Petto di pollo", "Pomodoro", "Ricotta", "pancett
 const forList = document.querySelector('.for-list');
 
 for (let i = 0; i < alimenti.length; i++){
-    const liFoor = document.createElement('li');
-    liFoor.innerHTML = `${alimenti[i]}`;
-    forList.append(liFoor);
+    const liFor = document.createElement('li');
+    liFor.innerHTML = `${alimenti[i]}`;
+    forList.append(liFor);
 }
 
 // while loop
